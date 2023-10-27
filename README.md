@@ -27,4 +27,25 @@ Two errors:
 ![Alt text](image-5.png)
 
 Succeeded test:
+![Alt text](image-6.png)
+
+
+Add some style:
+
+Login:
+![Alt text](image-7.png)
+
+Add Post:
+![Alt text](image-8.png)
+
+Add two:
+![Alt text](image-9.png)
+
+Delete:
+![Alt text](image-10.png)
+
+Test Pass:
+![Alt text](image-11.png)
+
+Bootstrap:
 

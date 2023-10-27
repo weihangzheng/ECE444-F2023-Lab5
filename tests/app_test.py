@@ -1,6 +1,7 @@
 import os
 import pytest
 from pathlib import Path
+import json
 
 from project.app import app, init_db
 
@@ -17,6 +18,12 @@ def client():
     yield app.test_client() # tests run here
     init_db() # teardown
 
+
+def test_delete_message(client):
+    """Ensure the messages are being deleted"""
+    rv = client.get('/delete/1')
+    data = json.loads(rv.data)
+    assert data["status"] == 1
 
 def login(client, username, password):
     """Login helper function"""
